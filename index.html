@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+  <nav>
+    <div class="nav-container">
+
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <div class="logo">Jon Krajack</div>
+
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Building Jeckal</h1>
+          <p>These projects are part of my journey to create Jeckal, a video-based language learning platform to help Spanish-speaking adults learn English with simple, visual lessons  — built from scratch using my own code.</p>
+        </div>
+        <div class="hero-image">
+          <img src="JK.jpg" alt="Photo of Jon Krajack" />
+        </div>
+      </div>
+    </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="featured-project">
+      <div class="project-card">
+        <h3>Jeckal React Rebuild</h3>
+        <p>The final version of the Jeckal app rebuilt using React for production use.</p>
+      </div>
+    </div>
+    
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Jeckal MVP</h3>
+        <p>A working prototype of the Jeckal platform using all previous skills.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Stripe Subscription App</h3>
+        <p>Custom checkout with Stripe and role-based gated content.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Full Stack Notes App</h3>
+        <p>A secure app with user auth, CRUD, and database integration.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Fake Auth + Routing App</h3>
+        <p>Simulated login and page protection using localStorage and JS routing.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Interactive Video Library</h3>
+        <p>A frontend layout with dynamic filtering and fake watch progress.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Personal Portfolio Site</h3>
+        <p>Portfolio website built with HTML, CSS, and Javascript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Git & GitHub</li>
+      <li>Responsive Design</li>
+      <li>Flexbox</li>
+      <li>Media Queries</li>
+      <li>DOM Manipulation</li>
+      <li>REST APIs</li>
+      <li>Authentication</li>
+      <li>Node.js</li>
+      <li>Express</li>
+      <li>React</li>
+      <li>PostgreSQL</li>
+      <li>Stripe</li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <h1>Contact Me</h1>
+    <form action="https://formspree.io/f/xeokqjzl" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+  
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
+
+  <footer>
+    <p>&copy; 2025 Jon Krajack. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

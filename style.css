@@ -1,0 +1,307 @@
+
+/* ===== Global Reset & Defaults ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 0;
+}
+
+/* ===== Navigation Styles ===== */
+
+nav {
+  background-color: #333;
+  padding: 1rem;
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  position: relative;
+  flex-wrap: nowrap;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  order: 0;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+  order: 1;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* =============================== */
+/* ====== Home Page Styles ======= */
+/* =============================== */
+
+/* ===== Hero Section ===== */
+
+.hero {
+  background-color: #f9f9f9;
+  padding: 2.5rem 1rem 2rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1 1 600px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.hero-image {
+  flex: 1 1 300px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+/* ===== Main Content Layout ===== */
+
+main {
+  flex: 1;
+}
+
+/* ===== Projects Section ===== */
+
+.projects {
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.featured-project {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.featured-project .project-card {
+  max-width: 575px;
+  width: 100%;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  flex: 1 1 calc(50% - 1rem);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  max-width: 575px;
+}
+
+/* ===== Skills Section ===== */
+
+.skills {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.skills h2 {
+  margin-bottom: 1rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skills-list li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+/* ===== Footer ===== */
+
+footer {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* =============================== */
+/* ===== Contact Page Styles ===== */
+/* =============================== */
+
+.contact {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.contact label {
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.contact button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color:#007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact button:hover {
+  background-color: #0056b3;
+}
+
+/* ===== Media Queries ===== */
+
+@media (max-width: 764px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .project-card {
+    flex: 1 1 100%;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 1rem;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  #menu-toggle:checked + .menu-icon + .logo + .nav-links {
+    display: flex;
+  }  
+
+  .nav-links li a {
+    color: black;
+  }
+}
