@@ -34,10 +34,8 @@ JavaScript integration coming soon for:
 personal-portfolio-site/
 ├── index.html
 ├── style.css
-├── contact.html (deleted)
-├── about.html (deleted)
 ├── assets/
-│ └── JK.jpg
+│ └── hero.jpg
 ├── README.md
 
 
