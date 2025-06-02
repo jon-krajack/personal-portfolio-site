@@ -1,16 +1,21 @@
 
+/* =================================== */
 /* ===== Global Reset & Defaults ===== */
+/* =================================== */
 
+/* Reset default browser styles and set box sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Enable smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
 }
 
+/* Set base body styles and layout behavior */
 body {
   display: flex;
   flex-direction: column;
@@ -23,14 +28,18 @@ body {
   padding: 0;
 }
 
-/* ===== Navigation Styles ===== */
+/* =============================== */
+/* ===== Navigation Styles ====== */
+/* =============================== */
 
+/* Style the navigation bar background and padding */
 nav {
-  background-color: #333;
+  background-color: #2a2a2a;
   padding: 1rem;
   width: 100%;
 }
 
+/* Container for logo and nav links, with spacing */
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -41,22 +50,26 @@ nav {
   flex-wrap: nowrap;
 }
 
+/* Horizontal nav link list (large screens) */
 nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
 
+/* Nav link styles for desktop */
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
+/* Underline nav link on hover */
 nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Logo text style */
 .logo {
   color: white;
   font-weight: bold;
@@ -64,6 +77,7 @@ nav ul li a:hover {
   order: 0;
 }
 
+/* Hamburger icon style */
 .menu-icon {
   display: none;
   font-size: 2rem;
@@ -72,10 +86,7 @@ nav ul li a:hover {
   order: 1;
 }
 
-#menu-toggle {
-  display: none;
-}
-
+/* Nav link list with default layout */
 .nav-links {
   list-style: none;
   display: flex;
@@ -84,9 +95,37 @@ nav ul li a:hover {
   padding: 0;
 }
 
+/* Style for links inside nav-links class */
 nav-links li a {
   text-decoration: none;
   color: white;
+}
+
+/* Hide the hamburger button by default */
+.menu-btn {
+  display:none;
+}
+
+/* ===== Theme Toggle Button ===== */
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: transform 0.2 ease;
+}
+/* Make toggle a bit bigger while hovering */
+.theme-toggle:hover {
+  transform: scale(1.2);
+}
+
+/* Group theme toggle, hamburger, and links on the right */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* =============================== */
@@ -95,11 +134,13 @@ nav-links li a {
 
 /* ===== Hero Section ===== */
 
+/* Hero section background and padding */
 .hero {
   background-color: #f9f9f9;
   padding: 2.5rem 1rem 2rem;
 }
 
+/* Container for hero text and image */
 .hero-content {
   display: flex;
   flex-wrap: wrap;
@@ -110,29 +151,34 @@ nav-links li a {
   gap: 2rem;
 }
 
+/* Hero text box with size limit and alignment */
 .hero-text {
   flex: 1 1 600px;
   max-width: 600px;
   text-align: left;
 }
 
+/* Hero heading styles */
 .hero-text h1 {
   font-size: 2.75rem;
   margin-bottom: 1rem;
 }
 
+/* Hero paragraph styles */
 .hero-text p {
   font-size: 1.2rem;
   line-height: 1.7;
   color: #444;
 }
 
+/* Container for hero image */
 .hero-image {
   flex: 1 1 300px;
   max-width: 500px;
   text-align: center;
 }
 
+/* Styling the hero image itself */
 .hero-image img {
   max-width: 100%;
   height: auto;
@@ -142,33 +188,39 @@ nav-links li a {
 
 /* ===== Main Content Layout ===== */
 
+/* Reserve space for content to stretch full height */
 main {
   flex: 1;
 }
 
 /* ===== Projects Section ===== */
 
+/* Projects section spacing */
 .projects {
   padding: 2rem 1rem;
   margin-bottom: 1rem;
 }
 
+/* Center the section title */
 .projects h2 {
   text-align: center;
   margin-bottom: 1rem;
 }
 
+/* Layout for the featured project card */
 .featured-project {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
 }
 
+/* Max width for featured project card */
 .featured-project .project-card {
   max-width: 575px;
   width: 100%;
 }
 
+/* Layout for the project grid */
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -178,6 +230,7 @@ main {
   margin: 0 auto;
 }
 
+/* Individual project card styles */
 .project-card {
   background-color: white;
   border: 1px solid #ddd;
@@ -190,15 +243,18 @@ main {
 
 /* ===== Skills Section ===== */
 
+/* Skills section padding and layout */
 .skills {
   padding: 2rem 1rem;
   text-align: center;
 }
 
+/* Skills section title */
 .skills h2 {
   margin-bottom: 1rem;
 }
 
+/* Grid layout for list of skills */
 .skills-list {
   list-style: none;
   padding: 0;
@@ -209,6 +265,7 @@ main {
   margin: 0 auto;
 }
 
+/* Styling individual skill boxes */
 .skills-list li {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -219,6 +276,7 @@ main {
 
 /* ===== Footer ===== */
 
+/* Footer style at the bottom of the page */
 footer {
   text-align: center;
   padding: 3rem 1rem 2rem;
@@ -226,16 +284,16 @@ footer {
   font-size: 0.9rem;
 }
 
-/* =============================== */
-/* ===== Contact Page Styles ===== */
-/* =============================== */
+/* ===== Contact Form Styles ===== */
 
+/* Contact form container */
 .contact {
   max-width: 600px;
   margin: 4rem auto;
   padding: 0 1rem;
 }
 
+/* Label styling for form inputs */
 .contact label {
   display: block;
   margin-top: 1.5rem;
@@ -243,6 +301,7 @@ footer {
   font-weight: bold;
 }
 
+/* Input and textarea styles */
 .contact input,
 .contact textarea {
   width: 100%;
@@ -253,10 +312,11 @@ footer {
   box-sizing: border-box;
 }
 
+/* Submit button styles */
 .contact button {
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
-  background-color:#007bff;
+  background-color: #666;
   color: #fff;
   border: none;
   border-radius: 0.5rem;
@@ -265,43 +325,106 @@ footer {
   transition: background-color 0.2s ease;
 }
 
+/* Change button color on hover */
 .contact button:hover {
-  background-color: #0056b3;
+  background-color: #000;
 }
 
 /* ===== Media Queries ===== */
 
 @media (max-width: 764px) {
+  
+  /* Stack nav links vertically */
   nav ul {
     flex-direction: column;
     gap: 0.5rem;
   }
 
+/* Make project cards full width */
   .project-card {
     flex: 1 1 100%;
   }
 
-  .menu-icon {
-    display: block;
-  }
+/* Show the hamburger button */
+.menu-btn {
+  display: block;
+  font-size: 1.5rem;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
 
+/* Style for hidden nav links (dropdown menu) */
   .nav-links {
     display: none;
     flex-direction: column;
+    gap: 0.5rem;
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     background-color: #fff;
     padding: 1rem;
     width: 100%;
+    padding: 1rem;
     z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.01);
   }
 
-  #menu-toggle:checked + .menu-icon + .logo + .nav-links {
-    display: flex;
-  }  
+/* Show menu when toggled */
+.nav-links.show {
+  display: flex;
+}
 
+/* Set link color inside mobile menu */
   .nav-links li a {
     color: black;
   }
+}
+
+
+
+/* ===== Light/Dark Mode ======== */
+
+body.dark-mode {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode hero {
+  background-color: #1e1e1e;
+  color: #f0f0f0
+}
+
+body.dark-mode .hero-text p {
+  color: #fff;
+}
+
+body.dark-mode .project-card,
+body.dark-mode .skills-list li,
+body.dark-mode .contact input,
+body.dark-mode .contact textarea {
+  background-color: #2a2a2a;
+  color: #fff;
+  border-color: #444;
+}
+
+body.dark-mode .contact button {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+body.dark-mode .contact button:hover {
+  background-color: #666;
+}
+
+body.dark-mode .nav-links li a {
+  color: #f0f0f0;
+}
+
+body.dark-mode footer {
+  color: #fff;
+}
+
+body.dark-mode section.hero {
+  background-color: #1e1e1e !important;
 }
