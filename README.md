@@ -8,11 +8,10 @@ A responsive, single-page portfolio website to showcase my web development proje
 
 - Responsive layout using Flexbox and media queries
 - Custom-designed project cards in a two-column layout
-- Mobile-friendly navigation with a working hamburger menu (checkbox method)
+- Mobile-friendly navigation with a working hamburger menu
 - Hero section with custom image and intro text
 - Contact form powered by Formspree
 - Skills section styled into three columns
-- Clean, consistent design ready for theming and JavaScript enhancements
 
 ---
 
@@ -20,12 +19,9 @@ A responsive, single-page portfolio website to showcase my web development proje
 
 - HTML5
 - CSS3
+- Javascript
 - Formspree (contact form handling)
 - Git & GitHub (version control)
-
-JavaScript integration coming soon for:
-- Mobile navigation (JS toggle method)
-- Light/dark mode toggle
 
 ---
 
@@ -49,11 +45,7 @@ This portfolio is **Project 1** in a self-directed learning path designed to pro
 
 ## Still To Do
 
-- Rebuild mobile nav with JavaScript instead of checkbox
-- Add light/dark mode toggle (JavaScript)
-- Apply brand color theme
 - Set up a live domain using a custom URL
-- Document project progress on GitHub
 
 ---
 
