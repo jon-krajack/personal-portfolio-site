@@ -26,31 +26,36 @@ This is a responsive personal portfolio site built as **Project 1** of the Jecka
 - Vercel for deployment
 - Custom domain hosted at jonkrajack.com
 
-## Roadmap
+## 🛠️ Project Roadmap: Building the Jeckal Web App
 
-This project is the first of several leading to the full **Jeckal** platform — a gated, video-based language learning application built with custom code and Outseta integration.
+This is a sequence of 7 standalone but interconnected projects. Each one builds foundational skills for constructing **Jeckal**, a video-based language learning platform.
 
-### Project 1: Personal Portfolio Website + Interactive FAQ ✅
-*Build a responsive portfolio with an FAQ section and core JS interactivity.*
+### Phase 1: Learning & Prototyping (Foundational Skills)
 
-### Project 2: Video Library (Frontend Only)
-*Build a filterable, searchable video catalog interface using mock data.*
+1. **Personal Portfolio Website + Interactive FAQ**  
+   _Static responsive site with JavaScript interactivity, custom FAQ, and dark mode toggle._
 
-### Project 3: Gated Video Access + Outseta Integration
-*Hide premium content and show it only to logged-in subscribers.*
+2. **Video Library (Frontend Only)**  
+   _A searchable, filterable video gallery using mock data to simulate Jeckal’s video content experience._
 
-### Project 4: Watched Progress Tracking (Frontend MVP)
-*Let users mark videos as watched and toggle visibility on/off (local only).*
+3. **Gated Video Access + Outseta Integration**  
+   _User login/logout, subscription handling, and conditional rendering of premium video content using Outseta._
 
-### Project 5: Admin Upload Tool (Custom CMS-lite)
-*Create a simple interface to add/edit video metadata in JSON or basic DB.*
+4. **Watched Progress Tracking (Frontend MVP)**  
+   _Users can mark videos as watched, and toggle visibility using localStorage._
 
-### Project 6: Jeckal React Rebuild
-*Rebuild the Jeckal UI using React components, hooks, and state.*
-
-### Project 7: Persistent Progress Tracking
-*Store user progress in a backend using Outseta’s user ID or email for cross-device sync.*
+5. **Admin Upload Tool (CMS-lite)**  
+   _Simple internal tool for adding/editing video metadata manually with form-based inputs._
 
 ---
+
+### Phase 2: Jeckal Official Build (Live Production)
+
+6. **Jeckal React Rebuild**  
+   _Rebuild of the entire frontend using React, state management, reusable components, and Outseta integration._
+
+7. **Backend API + Persistent Progress Tracking**  
+   _Custom backend with Node.js and Express.js to persist user progress, supporting cross-device syncing and REST API routes._
+
 
 
