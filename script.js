@@ -27,6 +27,28 @@ navItems.forEach(link => {
   });
 });
 
+// ===== FAQ Toggle Functionality ===== //
+
+// Select all question button in the FAQ section //
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+// Add click event listener to each question //
+// Close all answers first //
+faqQuestions.forEach(button => {
+  button.addEventListener('click', () => {
+    const answer = button.nextElementSibling;
+    const isVisible = answer.style.display === 'block';
+    document.querySelectorAll('.faq-answer').forEach(ans => {
+      ans.style.display = 'none';
+    });
+
+    // Toggle only if the answer was not already visible //
+    if (!isVisible) {
+      answer.style.display = 'block';
+    }
+  });
+});
+
 
 // ===== LIGHT/DARK MODE TOGGLE =====
 

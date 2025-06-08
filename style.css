@@ -247,6 +247,7 @@ main {
 .skills {
   padding: 2rem 1rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 /* Skills section title */
@@ -274,14 +275,47 @@ main {
   box-shadow: 0 2px 4px rgba(0,0,0,0.03);
 }
 
-/* ===== Footer ===== */
+/* ===== FAQ Section ===== */
 
-/* Footer style at the bottom of the page */
-footer {
+.faq {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq h2 {
   text-align: center;
-  padding: 3rem 1rem 2rem;
-  color: #666;
-  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border: none;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+.faq-question:hover {
+  background-color: #e0e0e0;
+}
+
+.faq-answer {
+  display: none;
+  padding: 1rem;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
 }
 
 /* ===== Contact Form Styles ===== */
@@ -332,6 +366,16 @@ footer {
 /* Change button color on hover */
 .contact button:hover {
   background-color: #000;
+}
+
+/* ===== Footer ===== */
+
+/* Footer style at the bottom of the page */
+footer {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  color: #666;
+  font-size: 0.9rem;
 }
 
 /* ===== Media Queries ===== */
@@ -387,7 +431,7 @@ footer {
 
   .skills-list {
     grid-template-columns: repeat(3, 1fr);
-    padding: 0 0.5rem;
+    padding: 0 0;
     gap: 0.5rem;
   }
 
@@ -447,4 +491,35 @@ body.dark-mode footer {
 
 body.dark-mode section.hero {
   background-color: #1e1e1e !important;
+}
+
+/* ===== Dark Mode Style for FAQ ===== */
+
+body.dark-mode .faq-item {
+  border: 1px solid #444;
+}
+
+body.dark-mode .faq-question {
+  all: unset;
+  display: block;
+  width: 100%;
+  background-color: #2a2a2a;
+  color: #fff;
+  border: #444;
+  padding: 1rem;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: none;
+}
+
+body.dark-mode .faq-question:hover {
+  background-color: #3a3a3a;
+}
+
+body.dark-mode .faq-answer {
+  background-color: #1e1e1e;
+  color:#fff;
+  border-top: 1px solid #444;
 }
