@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-This is a responsive personal portfolio site built as **Project 1** of the Jeckal Web App roadmap. It introduces me (Jon Krajack), showcases featured and past projects, highlights relevant skills I'm building, and includes a dynamic FAQ section.
+This is a responsive personal portfolio site built as **Project 1** of the Jeckal web application roadmap. See below for the project roadmap.
 
 ## Live Site
 
@@ -39,7 +39,7 @@ This project is the first of several leading to the full **Jeckal** platform —
 ### Project 3: Gated Video Access + Outseta Integration
 *Hide premium content and show it only to logged-in subscribers.*
 
-### 👁️Project 4: Watched Progress Tracking (Frontend MVP)
+### Project 4: Watched Progress Tracking (Frontend MVP)
 *Let users mark videos as watched and toggle visibility on/off (local only).*
 
 ### Project 5: Admin Upload Tool (Custom CMS-lite)
